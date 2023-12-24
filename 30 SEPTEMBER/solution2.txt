@@ -1,0 +1,36 @@
+Absolute and relative positioning are two CSS (Cascading Style Sheets) properties used to control the placement of elements on a webpage.
+They are both positioning schemes that help define the layout of elements, but they work in different ways.
+
+Absolute Positioning:
+
+When an element is positioned absolutely, it is taken out of the normal flow of the document.
+It is positioned relative to its nearest positioned ancestor, if any; otherwise, it's positioned relative to the initial containing block (usually the viewport).
+Absolute positioning is often used when you want to place an element at a specific location on the page, regardless of the surrounding elements.
+The element's position is specified using the top, right, bottom, and left properties, which determine the distance from the edges of its containing box.
+
+
+.absolute-positioned {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+}
+
+
+Relative Positioning:
+
+When an element is positioned relatively, it is still a part of the normal flow of the document. It is positioned relative to its normal position in the document flow.
+If you move an element with relative positioning, it will be offset from its normal position, but the space it originally occupied is still reserved for it in the layout.
+The top, right, bottom, and left properties can also be used with relative positioning to shift the element from its normal position.
+
+
+.relative-positioned {
+  position: relative;
+  top: 10px;
+  left: 20px;
+}
+Key Differences:
+
+Absolute positioning takes the element out of the normal flow, while relative positioning keeps the element in the normal flow but allows for adjustment.
+Absolute positioning is relative to the nearest positioned ancestor, while relative positioning is relative to the element's normal position.
+When you use absolute positioning, the positioned element is removed from the document flow, and other elements act as if it's not there.
+With relative positioning, the element still occupies space in the normal flow
